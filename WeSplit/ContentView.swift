@@ -18,8 +18,7 @@ struct ContentView: View {
     
     var totalPerPerson: Double {
         //calculate the total per person here
-        let numberOfPeopleInt = Int(numberOfPeople) ?? 0
-        let peopleCount = Double( numberOfPeopleInt + 2)
+        let peopleCount = Double( numberOfPeople ) ?? 0
         let tipSelection = Double(tipPercentages[tipPercentage])
         let orderAmount = Double(checkAmountDecimal) ?? 0
 
